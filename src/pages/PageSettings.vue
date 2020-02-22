@@ -1,0 +1,12 @@
+<template>
+  <q-page >
+   <p>Settings page</p>
+    
+  </q-page>
+</template>
+
+<script>
+export default {
+  name: 'PageIndex'
+}
+</script>
