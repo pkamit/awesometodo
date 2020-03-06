@@ -53,13 +53,17 @@ module.exports = function (ctx) {
         'QItemSection',
         'QItemLabel',
         'QCheckbox',
-        'QIcon'
+        'QIcon',
+        'QForm'
 
       ],
       directives: [],
 
       // Quasar plugins
-      plugins: []
+      plugins: [
+        'Notify',
+        'Dialog'
+      ]
     },
 
     // https://quasar.dev/quasar-cli/cli-documentation/supporting-ie
@@ -149,6 +153,9 @@ module.exports = function (ctx) {
     // Full list of options: https://quasar.dev/quasar-cli/developing-capacitor-apps/configuring-capacitor
     capacitor: {
       hideSplashscreen: true
+    },
+    config: {
+      notify: { /* Notify defaults */ }
     },
 
     // Full list of options: https://quasar.dev/quasar-cli/developing-electron-apps/configuring-electron
